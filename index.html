@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="style.css" rel="stylesheet">
+    <title>Calculator Tip</title>
+</head>
+<body>
+    <h1>SPLI
+        TTER
+    </h1>
+
+    <div class="conteiner-calc">
+        <Section class="input-calc">
+            <p>Bill</p>
+            <!-- onchange="calc()"  onchange="botones()"-->
+            <input type="text" class= "entrada-calc input-mod" id="bill"   >
+
+            <div class="numberPerson">
+                <p class = "Number-of-people">Number of People</p>
+                <p id="messege" class="messege"></p>
+                <input id="person" type="text" class= "number-person input-mod" >
+            </div>
+            
+            <p class = "tip-select">select Tip %</p>
+            <div class = "buttons-tip" id="button-porcent" onchange="calc()">
+                <button class= "btn" id = "five-porcent" value="5">5%</button>
+                <button class= "btn" id = "ten-porcent" value="10" >10%</button>
+                <button class= "btn" id = "fif-porcent" >15%</button>
+                <button class= "btn" id = "twenfi-porcent" >25%</button>
+                <button class= "btn" id = "fift-porcent">50%</button>
+                <input type="text" placeholder="Custom" id="custom-input" class="custom-tip" > 
+            </div>
+
+
+           
+        </Section>
+
+        <section class="output-calc" id = "out">
+
+            <div class="out-conteiner">
+            <p>Tip Amount</p>
+            
+            <input type="text" id="tip" class="tip-style entrada" disabled>
+             
+            <p class="total-text">Total</p>
+            <input type="text" id="total" class="total-style entrada" disabled>
+            </div>
+
+
+            <button id="btn" onclick="reset()">RESEST</button>
+        </section>
+
+        <script src="js/app.js"></script>
+    </div>
+</body>
+</html>
